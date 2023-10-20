@@ -52,13 +52,13 @@
 // }
 // console.log(intersectionArr)
 
-// for (let i of arr1) {
-//     if (arr2.includes(i)) {
-//         intersectionArr.push(i);
-//     }
-// }
+for (let i of arr1) {
+	if (arr2.includes(i)) {
+		intersectionArr.push(i);
+	}
+}
 
-// console.log(intersectionArr);
+console.log(intersectionArr);
 
 //* ------------------------------------------------ 7. ----------------------------------------------- */
 //*Bir isim listesindeki isimlerden ilk 10 ve son 10 ismi çıkartarak yeni bir sıralı liste oluşturun.

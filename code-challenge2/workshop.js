@@ -16,7 +16,7 @@
 // let array3;
 // for (let j = 0; j < array2.length; j++) {
 // 	array2[j][0] = array2[j][0].toUpperCase();
-// 	array2[j] = array2[j].join("");
+// 	array2[j] = array2[j].join"");(
 // 	array3 = array2.join(" ");
 // }
 // console.log(array3);

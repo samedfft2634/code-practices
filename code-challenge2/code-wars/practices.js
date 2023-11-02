@@ -66,40 +66,40 @@
 // console.log(findConsonants(input));
 
 // teamwork question
-// 1. High Priced Product Categories
+//! 1. High Priced Product Categories
 // You are given an array of objects representing a collection of products, each with a name, price, and
 // category. Your task is to use map, filter, and reduce to calculate the average price of products in each
 // category, and then return an array of objects containing only the categories that have an average price
 // above 50.
 // Sample input :
-const products = [
-	{ name: "Product 1", price: 20, category: "Electronics" },
-	{ name: "Product 2", price: 30, category: "Clothes" },
-	{ name: "Product 3", price: 40, category: "Electronics" },
-	{ name: "Product 4", price: 50, category: "Clothes" },
-	{ name: "Product 5", price: 60, category: "Clothes" },
-	{ name: "Product 6", price: 70, category: "Electronics" },
-	{ name: "Product 7", price: 80, category: "Clothes" },
-	{ name: "Product 8", price: 300, category: "Electronics" },
-];
+// const products = [
+// 	{ name: "Product 1", price: 20, category: "Electronics" },
+// 	{ name: "Product 2", price: 30, category: "Clothes" },
+// 	{ name: "Product 3", price: 40, category: "Electronics" },
+// 	{ name: "Product 4", price: 50, category: "Clothes" },
+// 	{ name: "Product 5", price: 60, category: "Clothes" },
+// 	{ name: "Product 6", price: 70, category: "Electronics" },
+// 	{ name: "Product 7", price: 80, category: "Clothes" },
+// 	{ name: "Product 8", price: 300, category: "Electronics" },
+// ];
 
-// Expected outcome :
-[
-	{ category: "Clothes", average: 55 },
-	{ category: "Electronics", average: 55 },
-];
+// // Expected outcome :
+// [
+// 	{ category: "Clothes", average: 55 },
+// 	{ category: "Electronics", average: 55 },
+// ];
 
-const averageItems = (arr) => {
-    let elc = arr.filter((product => product.category === "Electronics")).reduce((acc,sum)=>acc+sum.price,0)/ arr.filter((a => a.category === "Electronics")).length
-    let cloth = arr.filter((product => product.category === "Clothes")).reduce((acc,product)=> acc+product.price,0) /arr.filter((product => product.category === "Clothes")).length
-    return [{category: "Clothes", average: cloth},{category: "Electronics", average: elc}]
-}
-console.log(averageItems(products))
-
-
+// const averageItems = (arr) => {
+//     let elc = arr.filter((product => product.category === "Electronics")).reduce((acc,sum)=>acc+sum.price,0)/ arr.filter((a => a.category === "Electronics")).length
+//     let cloth = arr.filter((product => product.category === "Clothes")).reduce((acc,product)=> acc+product.price,0) /arr.filter((product => product.category === "Clothes")).length
+//     return [{category: "Clothes", average: cloth},{category: "Electronics", average: elc}]
+// }
+// console.log(averageItems(products))
 
 
-// 2. HR VS IT Department
+
+
+//! 2. HR VS IT Department
 // Task : You are given an array of objects representing a collection of employees, each with a name, salary,
 // and department. Your task is to use map, filter, and reduce to calculate the average salary for each
 // department and then return an array of objects containing only the departments that have an average
